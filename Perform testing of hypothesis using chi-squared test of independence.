@@ -1,0 +1,163 @@
+Null Hypothesis - H0 : The performance of girls students is same as boys students. Alternate Hypothesis - H1 : The performance of boys and girls students are different. Open Excel Workbook
+
+ 
+
+ 
+
+O
+
+A
+
+B
+
+C
+
+D
+
+Total
+
+ 
+
+
+
+Girls
+
+11
+
+7
+
+5
+
+5
+
+11
+
+39
+
+6.075
+
+Boys
+
+30
+
+4
+
+3
+
+10
+
+14
+
+61
+
+6.075
+
+Total
+
+41
+
+11
+
+8
+
+15
+
+25
+
+100
+
+12.150
+
+Ei
+
+20.5
+
+5.5
+
+4
+
+7.5
+
+12.5
+
+50
+
+ 
+
+Prepare a contingency table as shown above. To calculate Girls Students with ‘O’ Grade
+
+Go to Cell N6 and type =COUNTIF($J$2:$K$40,"O")
+
+ 
+
+To calculate Girls Students with ‘A’ Grade
+
+Go to Cell O6 and type =COUNTIF($J$2:$K$40,"A")
+
+ 
+
+To calculate Girls Students with ‘B’ Grade
+
+Go to Cell P6 and type =COUNTIF($J$2:$K$40,"B")
+
+ 
+
+To calculate Girls Students with ‘C’ Grade
+
+Go to Cell Q6 and type =COUNTIF($J$2:$K$40,"C")
+
+ 
+
+To calculate Girls Students with ‘D’ Grade
+
+Go to Cell R6 and type =COUNTIF($J$2:$K$40,"D")
+
+ 
+
+To calculate Boys Students with ‘O’ Grade
+
+Go to Cell N7 and type =COUNTIF($D$2:$E$62,"O")
+
+ 
+
+To calculate Boys Students with ‘A’ Grade
+
+Go to Cell O7 and type =COUNTIF($D$2:$E$62,"A")
+
+ 
+
+To calculate Boys Students with ‘B’ Grade
+
+Go to Cell P7 and type =COUNTIF($D$2:$E$62,"B") To calculate Boys Students with ‘C’ Grade
+
+Go to Cell Q7 and type =COUNTIF($D$2:$E$62,"C")
+
+
+
+
+
+To calculate Boys Students with ‘D’ Grade
+
+Go to Cell R7 and type =COUNTIF($D$2:$E$62,"D")
+
+To calculated the expected value Ei
+Go to Cell N9 and type =N8/2 Go to Cell O9 and type =O8/2 Go to Cell P9 and type =P8/2 Go to Cell Q9 and type =Q8/2 Go to Cell R9 and type =R8/2
+
+Go to Cell S6 and calculate total girl students = SUM(N6:R6) Go to Cell S7 and calculate total girl students = SUM(N7:R7)
+
+ 
+
+Now Calculate
+Go to cell T6  and type
+
+=SUM((N6-$N$9)^2/$N$9,(O6-$O$9)^2/$O$9,(P6-$P$9)^2/$P$9,(Q6-Q$9)^2/$Q$9, (R6-$R$9)^2/$R$9)
+
+Go to cell T7  and type
+
+=SUM((N7-$N$9)^2/$N$9,(O7-$O$9)^2/$O$9,(P7-$P$9)^2/$P$9,(Q7-Q$9)^2/$Q$9, (R7-$R$9)^2/$R$9)
+
+To get the table value go to cell T11 and type =CHIINV(0.05,4)
+
+
+Go to cell O13 and type =IF(T8>=T11," H0 is Accepted", "H0 is Rejected")
+
